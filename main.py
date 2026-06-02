@@ -1,6 +1,6 @@
 import json
 import os
-import time  # ◀── 1. Add this import at the top!
+import time  
 from src.agent_graph import agent_app
 
 def execute_batch_evaluation(config_name, ablation_flag):
@@ -64,7 +64,7 @@ def execute_batch_evaluation(config_name, ablation_flag):
                 except Exception as e2:
                     print(f" ❌ Final failure {q_id}: {e2}")
             
-            # ◀── 2. Add a 5-second sleep pause here to pace out the free tier requests!
+            
             print("Pacing API requests... resting for 5 seconds...")
             time.sleep(6)
             
@@ -89,5 +89,5 @@ if __name__ == "__main__":
         
     print("\n========================================================")
     print("ALL ABLATION FILES SUCCESSFULLY COMPILED FOR GRADING!")
-    print("Check the 'predictions/' folder to review your outputs.")
+    print("Check the 'predictions/' folder to review")
     print("========================================================")
