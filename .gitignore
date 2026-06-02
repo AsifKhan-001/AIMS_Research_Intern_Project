@@ -1,0 +1,14 @@
+# Bypasses the massive local dependencies folder
+myenv/
+env/
+venv/
+
+# Bypasses local Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Bypasses system hidden files
+.DS_Store
+.vscode/
